@@ -63,5 +63,10 @@ describe('Car class', () => {
 		prius.drive(5);
 		expect(prius.odometer).toBe(15);
 	});
-	test.todo('drive method return the updated odometer'); // todo
+	test('driveAsync method resolves the updated odometer', async () => {
+		let updatedOdometer = await prius.driveAsync(7);
+		expect(updatedOdometer).toBe(7);
+		updatedOdometer = await prius.driveAsync(5);
+		expect(updatedOdometer).toBe(12);
+	}); // todo
 });
