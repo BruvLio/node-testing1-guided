@@ -63,5 +63,5 @@ describe('Car class', () => {
 		prius.drive(5);
 		expect(prius.odometer).toBe(15);
 	});
-	test.todo('drive method return the updated odometer');
+	test.todo('drive method return the updated odometer'); // todo
 });
